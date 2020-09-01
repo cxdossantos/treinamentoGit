@@ -86,13 +86,84 @@ Conceitos:
 - Site com informações do gitignore:
 # https://github.com/github/gitignore
 
-13)Mesclando informações
-- Sempre você está na branch que será atualizada
-# git merge branch_origem_atualizacao
-- Enviar depois de mergeado
+13) Clonando Repositorio
+- Clonando um projeto
+# git clona <url_projeto>
+
+14) Versionar alteração no servidor
+- Enviar alterações commitadas ao servidor
+# git push
+- Baixar ultimas atualizações da branch
+# git pull 
+
+- Commits também podem ser feitos direto pelo GitHUb
+
+15) GitHub: Star, fork e pull request
+- Star: Basicamente, favorita o projeto
+- Fork: Basicamente, clona um projeto para o seu perfil
+- Pull request: Envio de sugestão de melhoria para o repositório
+
+16) Issues, Milestones, Labels
+Issues: Problemas/Pendencias encontrados no código para correção
+Labels: Sinalizados para as Issues criadas
+Milestones: Basicamente uma "nova release" no repositório (Em qual versão Issue vai/foi resolvido) 
+
+- Para ajudar criar um README apresentavel, use o site:
+dillinger
+
+17) BitBucket: Para configuração de chave ssh, existe um ink tutorial no proprio BitBucket
+- Para alternar users com ssh diferentes 
+# eval $(sh-agent)
+# ssh-add ~/.ssh/arquivo_chave_SSH
+
+18) Conceitos de branch
+- Ramificação do Projeto, que permite que funcionalidades 
+sejam desenvolvidas separadamente sem impactar funcionalidades estaveis do Projeto
+
+19) Alterações não versionadas
+- Resetar alteração e perder mudanças 
+# git reset -HARD
+
+20) Criação e Branch
+- Lista branchs locais
+# git branch
+
+- Criar nova branch Local
+# git branch nome_desejado
+
+- Trocar de branch
+# git checkout nome_branch
+
+- Criar e Trocar branch
+#git checkout -b nome_desejado
+
+21) Enviando branch para o repositório
+- Criando Branch Local no Repositório:
+# git push --set-upstream origin nome_branch_repositorio
+- Enviar informações commitadas ao repositório
 # git push
 
-14) Conflitos
-- Utilize IDES para comparar e resolver conflitos com mais praticidade
--> Como configurar kdiff3 no linux? 
+- 'git pull' nao atualiza somente a branch acessada, e sim todo repositório
+
+22) Removendo branchs locais
+- Remover branch Local
+# git branch -D nome_branch_local
+
+23) Remover Branch remotas
+- Remover branch Local e Repositório
+# git push --delete origin name_branch
+
+24) Renomear Branch (Local e Remota)
+- Local:
+# git branch -m nome_branch_branch_atual nome_branch_branch_desejado 
+
+25) Mesclano Alterações
+- Merge é sempre na branch que estamos
+- Mescle com a branch origem 
+# git merge branch_com_ateracoes
+- Enviar as alterações
+# git push 
+
+- Utilize as IDE's para resoler conflitos
+
 
