@@ -166,4 +166,9 @@ sejam desenvolvidas separadamente sem impactar funcionalidades estaveis do Proje
 
 - Utilize as IDE's para resoler conflitos
 
-
+26) Adicionando TAG
+- Adicionar TAG
+# git tag -a nome_tag -m "Mensagem da Tag"
+- Visualizar Tags
+# git tag
+-- Nao entendi pra que serve
