@@ -86,4 +86,10 @@ Conceitos:
 - Site com informações do gitignore:
 # https://github.com/github/gitignore
 
-13)
+13)Mesclando informações
+- Sempre você está na branch que será atualizada
+# git merge branch_origem_atualizacao
+- Enviar depois de mergeado
+# git push
+
+
