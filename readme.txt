@@ -92,4 +92,7 @@ Conceitos:
 - Enviar depois de mergeado
 # git push
 
+14) Conflitos
+- Utilize IDES para comparar e resolver conflitos com mais praticidade
+-> Como configurar kdiff3 no linux? 
 
