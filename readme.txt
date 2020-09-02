@@ -166,7 +166,7 @@ sejam desenvolvidas separadamente sem impactar funcionalidades estaveis do Proje
 
 - Utilize as IDE's para resoler conflitos
 
-26) Adicionando TAG
+26) TAG
 - Basicamente uma nova release do projeto 
 - Adicionar TAG
 # git tag -a nome_tag -m "Mensagem da Tag"
@@ -174,5 +174,11 @@ sejam desenvolvidas separadamente sem impactar funcionalidades estaveis do Proje
 # git tag
 - Enviar tag para  servidor
 # git push origin tag_name
-
-
+- Remover Tag Local
+# git tag -d tag_name
+- Remover tag Repositorio
+# git push --delete origin tag_name 
+- Tag podem ser criadas em commits antigos
+# git checkout cha_commit
+# git tag -a name_tag -m "Mensagem commit"
+# git tag
