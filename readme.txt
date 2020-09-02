@@ -182,3 +182,50 @@ sejam desenvolvidas separadamente sem impactar funcionalidades estaveis do Proje
 # git checkout cha_commit
 # git tag -a name_tag -m "Mensagem commit"
 # git tag
+
+27) STASH
+- Salvar as mudanças realizadas na memória
+# git STASH
+- Lista Stashs salvos (Sempre do mais atual para o mais antigo)
+# git stash list
+- Salvando Stash com mensagem 
+# git stash save "mensagem"
+- Aplicando Primeiro Stash da lista (Sem remover da lista)
+# git stash apply 
+- Aplicando Primeiro Stash da lista (Removendo da lista)
+# git stash pop
+- Remover Stash da lista sem aplicar
+# git stash drop stash@{x} // 'X' é a posição do stash
+
+28) Commit
+- Desfazer commit localmente
+# git reset --hard HEAD~1
+- Adicionando alerações ao commit
+# git add arquivos_alterados
+# git commit -- amend
+
+- Adicionar todas mudanças e commitar em uma linha
+# git -a -m "Mensagem"
+
+29) Fetch
+- Tras atulizações no servidor remoto 
+# git fetch 
+
+30) Git rebase
+- Estando na branch a ser atualizda, para uma sequencia linear
+# git rebase branch_origem
+
+31) ALIAS
+- Ajustando atalho para comandos (Trocando "status" por "s")
+# git config --global alias.s status
+- Deletando ALIAS
+# git config --global --unset alias.s 
+
+32) Remote
+- Verificar URL que está associada a projeto
+# git remote -v
+
+33) Grep
+- Aplica filtro para encontrar branchs/Tags
+# git branch | greb filtro_procurado
+
